@@ -1,0 +1,313 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom:50px ;
+
+}
+
+header {
+    background-color: #333;
+    max-width: auto;
+    height: auto;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.gallery img {
+    position: relative;
+    margin-top: 10px;
+    width: 200px;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+/* Simple animation */
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+#categories{
+    padding-top: 6px;
+}
+
+#categories ol li {
+    font-size: 20px;
+    font: bold;
+    color: #4e4d4d;
+    margin-top: 40px;
+}
+p{
+    text-align: justify;
+    margin-right: 5px;
+}
+
+
+#box{
+    background-color: #cab389;
+    color: #000000;
+    padding: 10px; 
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-top: 30px;
+    opacity: 0.8;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+.gallery img {
+    position: relative;
+    margin-top: 10px;
+    width: 200px;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.category-books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.category-books img{
+    position: relative;
+    margin-top: 10px;
+    width: 250px;
+    height: 300px;
+}
+
+/*Author*/
+#best-sellers{
+    text-align: center;
+    padding: 10px;
+}
+
+#best-sellers h2{
+    margin-bottom: 4px;
+}
+
+.sellers h2{
+    text-align: center;
+    color: #0a0a0a;
+    
+}
+
+#sellers-info{
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+.sellers-description h3{
+    color: #4e4d4d;
+}
+
+.sellers-description{
+    margin: 10px;
+    padding-top: 30px;
+}
+
+.sellers-description img{
+    border-radius: 50%; 
+    width: 250px; 
+    height: 250px;
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #646566;
+    color: white;
+    padding: 10px; 
+    text-align: center; 
+}
+
+td {
+    background-color: rgba(231, 229, 229, 0.986);
+    padding: 8px; 
+    border-bottom: 1px solid #0c0c0c; 
+    text-align: left;
+}
+
+#contact{
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 10px;
+    padding-left: 20px;
+}
+
+#contact-us {
+    background-color: #eeedc3;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px #0a0a0af8(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 60%;
+    font-size: 14px;
+}
+
+.contact-Us h3 {
+    margin-top: 4px; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 4px; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%; 
+    padding: 8px; 
+    border: 1px solid #eeedc3; 
+    border-radius: 4px;
+    margin-bottom: 10px; 
+}
+
+textarea {
+    resize: none; 
+}
+
+.contact-image {
+    flex: 0 0 auto; 
+    margin-right: 10px; 
+    margin-top: 50px;
+}
+
+.contact-image img {
+    max-width: 350px; 
+    height: auto; 
+}
+
+button{
+    border: none;
+    background-color: #ac8764;
+    color: #fafaf7;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/*footer*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 22px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    padding-bottom: 0%;
+
+}
+
+.social-icons {
+    text-align: center; 
+    margin-bottom: 8px;  
+}
+
+.social-icons a {
+    color: white; 
+    margin: 0 5px; 
+    text-decoration: none; 
+    font-size: 25px; 
+}
+
+.social-icons a:hover {
+    opacity: 0.7; 
+}
+
+
+footer p {
+    text-align: center;
+
+}
+/* Responsive design */
+@media (max-width: 600px) {
+    nav ul {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 200px;
+        margin: 15px 0;
+    }
+
+    .contact-image img{
+        width: 100%;
+        max-width: 200px;
+        margin: 15px 0;
+        
+    }
+}
